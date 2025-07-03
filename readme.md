@@ -66,3 +66,24 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
+
+## 🚀 Ejecutar con Docker
+
+Si prefieres usar Docker en lugar de instalar dependencias localmente, puedes levantar la aplicación con los siguientes pasos:
+
+1. Asegúrate de tener Docker instalado:  
+   [Instalar Docker](https://www.docker.com/get-started/)
+
+2. En la raíz del proyecto, ejecuta el siguiente comando para construir y levantar el contenedor en segundo plano:
+
+```bash
+docker compose up -d
+```
+
+> Este comando:
+> - Construye la imagen definida en el `Dockerfile`.
+> - Inicia el contenedor exponiendo la aplicación en el puerto `8000`.
+> - Monta tu código local en el contenedor para reflejar cambios automáticamente (gracias al `--reload` de Uvicorn).
+
+3. Accede a la API desde tu navegador en:  
+[http://localhost:8000/docs](http://localhost:8000/docs)
