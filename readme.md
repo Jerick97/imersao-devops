@@ -87,3 +87,11 @@ docker compose up -d
 
 3. Accede a la API desde tu navegador en:  
 [http://localhost:8000/docs](http://localhost:8000/docs)
+
+
+## Autenticando no Google Cloud
+```bash
+gcloud auth login
+gcloud config set project Project_id
+gcloud run deploy --port=8000
+```
