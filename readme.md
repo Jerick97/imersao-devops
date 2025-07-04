@@ -92,6 +92,6 @@ docker compose up -d
 ## Autenticando no Google Cloud
 ```bash
 gcloud auth login
-gcloud config set project Project_id
+gcloud config set project PROJECT_ID
 gcloud run deploy --port=8000
 ```
